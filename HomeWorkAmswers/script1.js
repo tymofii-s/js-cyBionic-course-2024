@@ -1,8 +1,8 @@
-let apiKey = "46689bfcece6f63d69a38a9d5ef28fe9"
+const apiKey = "46689bfcece6f63d69a38a9d5ef28fe9"
 
 document.querySelector("button").addEventListener("click", function () {
-    let city = document.querySelector("input").value
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=uk`
+    const city = document.querySelector("input").value
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=uk`
 
     fetch(apiUrl)
         .then(response => {
